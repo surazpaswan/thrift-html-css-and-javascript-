@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Trendy Fashion Collections | THRIFT</title>
+
+    <!-- Style for email and signup popup -->
+    <style>
+        html {
+    scroll-behavior: smooth;
+  }
+
+      .email-success {
+        color: green;
+        margin-top: 10px;
+        font-weight: bold;
+        display: none;
+        
+        
+
+
+      }
+
+      .signup-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .signup-form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+      }
+
+      .signup-form input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+      }
+
+      .signup-form .btn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 22px;
+        cursor: pointer;
+      }
+
+      .signup-success {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">THRIFT</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+  <li><a href="#catalogue">CATALOGUE</a></li>
+  <li><a href="#fashion">FASHION</a></li>
+  <li><a href="#favourite">FAVOURITE</a></li>
+  <li><a href="#lifestyle">LIFESTYLE</a></li>
+  <li><a href="#about">ABOUT US</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li><a href="#terms">TERMS</a></li>
+  <li><button class="btn" id="open-signup">SIGN UP</button></li>
+</ul>
+
+    </nav>
+
+    <header>
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h1>
+            <span>LET'S</span><br />
+            EXPLORE<br />
+            <span>UNIQUE</span><br />
+            CLOTHES.
+          </h1>
+          <p>Live for influential and innovative fashion!</p>
+          <div class="header__btns">
+            <button class="btn">Shop Now</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+      
+    </header>
+
+    <section class="banner">
+      <div class="banner__container">
+        <img src="assets/banner-1.png" alt="banner" />
+        <img src="assets/banner-2.png" alt="banner" />
+        <img src="assets/banner-3.png" alt="banner" />
+        <img src="assets/banner-4.png" alt="banner" />
+        <img src="assets/banner-5.png" alt="banner" />
+        <img src="assets/banner-6.png" alt="banner" />
+        <img src="assets/banner-7.png" alt="banner" />
+        <img src="assets/banner-8.png" alt="banner" />
+      </div>
+    </section>
+
+    <section class="section__container arrival__container" id="catalogue">
+    <section class="section__container" id="about">
+    <h2 class="section__header">ABOUT US</h2>
+    <p>
+    Welcome to <strong>THRIFT</strong> – your one-stop fashion destination for trendy, affordable, and sustainable clothing. 
+    We believe fashion should empower everyone without breaking the bank.
+    </p>
+    <p>
+    Since 2025, THRIFT has been curating collections that reflect individual style and personality while focusing on comfort, 
+    quality, and ethical choices.
+    </p>
+    </section>
+
+      <h2 class="section__header">NEW ARRIVALS</h2>
+      <div class="arrival__grid">
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="assets/arrival-1.jpg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Hoodies & Sweatshirts</h4>
+              <a href="#">Explore Now</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="assets/arrival-2.jpg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Coats & Parkas</h4>
+              <a href="#">Explore Now</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="arrival__card">
+          <div class="arrival__image">
+            <img src="assets/arrival-3.jpg" alt="arrival" />
+          </div>
+          <div class="arrival__content">
+            <div>
+              <h4>Tees & T-Shirt</h4>
+              <a href="#">Explore Now</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sale" id="fashion">
+      <div class="section__container sale__container">
+        <div class="sale__image">
+          <img src="assets/sale.png" alt="sale" />
+        </div>
+        <div class="sale__content">
+          <h2><span>PAYDAY</span><br />SALE NOW</h2>
+          <p>
+            Spend minimal $100 get 30% off voucher code for your next purchase
+          </p>
+          <h4>1 July - 10 July 2025</h4>
+          <p>*Terms and conditions apply</p>
+          <div class="sale__btn">
+            <button class="btn">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container favourite__container" id="favourite">
+      <h2 class="section__header">YOUNG'S FAVOURITE</h2>
+      <div class="favourite__grid">
+        <div class="favourite__card">
+          <div class="favourite__image">
+            <img src="assets/favourite-1.jpg" alt="favourite" />
+          </div>
+          <div class="favourite__content">
+            <div>
+              <h4>Trending on Instagram</h4>
+              <a href="#">Explore Now</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <div class="favourite__card">
+          <div class="favourite__image">
+            <img src="assets/favourite-2.jpg" alt="favourite" />
+          </div>
+          <div class="favourite__content">
+            <div>
+              <h4>All under $40</h4>
+              <a href="#">Explore Now</a>
+            </div>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container download__container" id="lifestyle">
+      <div class="download__image">
+        <img src="assets/download.png" alt="download" />
+      </div>
+      <div class="download__content">
+        <h2 class="section__header">DOWNLOAD APP & GET THE VOUCHER!</h2>
+        <p>
+          Get 30% off for first transaction using our new mobile app for now.
+        </p>
+        <div class="download__links">
+          <a href="#">
+            <img src="assets/apple.png" alt="apple" />
+          </a>
+          <a href="#">
+            <img src="assets/google.png" alt="google" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="section__container promo__container">
+        <h2 class="section__header">
+          JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+        </h2>
+        <p>Type your email down below and be young wild generation</p>
+        <form id="promo-form">
+          <input type="text" id="email-input" placeholder="Add your email here" required />
+          <button class="btn" type="submit">SEND</button>
+        </form>
+        <p class="email-success" id="email-success-msg">
+          ✅ We have successfully received your email!
+        </p>
+      </div>
+    </section>
+    <section class="section__container" id="terms">
+  <h2 class="section__header">TERMS & CONDITIONS</h2>
+  <p>By using our website, you agree to the following:</p>
+  <ul>
+    <li>✔️ All items sold are final unless explicitly stated otherwise.</li>
+    <li>✔️ Customers must ensure correct sizing before purchase.</li>
+    <li>✔️ THRIFT respects your privacy and protects your data.</li>
+    <li>✔️ We are not responsible for delays caused by shipping providers.</li>
+  </ul>
+</section>
+
+    <section class="section__container" id="contact">
+  <h2 class="section__header">CONTACT US</h2>
+  <form id="contact-form">
+    <input type="text" id="contact-name" placeholder="Your Name" required />
+    <input type="email" id="contact-email" placeholder="Your Email" required />
+    <textarea id="contact-message" rows="5" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+    <p id="contact-success" style="color: green; display: none;">✅ Message sent successfully!</p>
+  </form>
+</section>
+
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#">THRIFT</a>
+          </div>
+          <p>Complete your style with awesome clothes from us.</p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Store Location</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Trendy Fashion Collections. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- SIGN UP POPUP HTML -->
+    <div class="signup-popup" id="signup-popup">
+      <div class="signup-form">
+        <span class="close-btn" id="close-signup">&times;</span>
+        <h2>Create Account</h2>
+        <form id="signup-form">
+          <input type="text" id="signup-name" placeholder="Full Name" required />
+          <input type="email" id="signup-email" placeholder="Email" required />
+          <input type="password" id="signup-password" placeholder="Password" required />
+          <button type="submit" class="btn">Create Account</button>
+        </form>
+        <p class="signup-success" id="signup-success-msg">✅ You have successfully created an account!</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+    <!-- Email form success logic -->
+    <script>
+      document.getElementById("promo-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const input = document.getElementById("email-input");
+        const msg = document.getElementById("email-success-msg");
+
+        if (input.value.trim() !== "") {
+          msg.style.display = "block";
+          input.value = "";
+          setTimeout(() => {
+            msg.style.display = "none";
+          }, 4000);
+        }
+      });
+    </script>
+
+    <!-- SIGN UP POPUP Logic -->
+    <script>
+      // Wait for DOM to load
+      document.addEventListener("DOMContentLoaded", () => {
+        const openSignupBtn = document.getElementById("open-signup");
+        const closeSignupBtn = document.getElementById("close-signup");
+        const signupPopup = document.getElementById("signup-popup");
+        const signupForm = document.getElementById("signup-form");
+        const successMsg = document.getElementById("signup-success-msg");
+
+        openSignupBtn.addEventListener("click", () => {
+          signupPopup.style.display = "flex";
+        });
+
+        closeSignupBtn.addEventListener("click", () => {
+          signupPopup.style.display = "none";
+        });
+
+        signupForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          successMsg.style.display = "block";
+          signupForm.reset();
+
+          setTimeout(() => {
+            signupPopup.style.display = "none";
+            successMsg.style.display = "none";
+          }, 3000);
+        });
+      });
+    </script>
+    <script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("contact-success").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("contact-success").style.display = "none";
+    }, 4000);
+    this.reset();
+  });
+</script>
+
+  </body>
+</html>
